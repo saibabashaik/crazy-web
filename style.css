@@ -1,1 +1,456 @@
+********************
+	Created on: 25-7-2019;
+	Author: saibaba shaik;
+	Version: 2.0.1;
+	License	   : none (public domain);
+	********************
+*/
+/*
+	Table of contents
+     	
+/* importing google fonts */
 
+@import url('https://fonts.googleapis.com/css?family=DM+Serif+Text|Literata|Open+Sans|Raleway|Roboto+Condensed&display=swap');
+
+/*browser reset*/
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*/browser reset*/
+.smart-button{
+background-color: #eb9a9f;
+color: white;
+width: 10%;
+height: 30px;
+cursor: pointer;
+border: 2px solid red;
+font-family: 'Hanalei', cursive;
+transition: all 4s;
+position: relative;
+animation-name: sai;
+animation-duration: 4s;
+animation-iteration-count: infinite;
+animation-direction: alternate-reverse;
+}
+.smart-button:hover{
+	border-radius: 50%;
+	width: 15%;
+	height: 40px;
+	transform:rotate(360deg);
+	background-color: green
+
+}
+.smart-button:focus{
+	outline: none;
+}
+@keyframes {
+	0%{background-color: red;transform: rotate(180deg);}
+	25%{background-color: red;transform: rotate(0deg);}
+	50%{background-color: green;transform: rotate(120deg);}
+	75%{background-color: blue;transform: rotate(240deg);}
+	100%{background-color: pink;transform: rotate(360deg);}
+}
+.smart-button-design{
+	background-color:red;
+	width: 25%;
+	height: 100px;
+	cursor: pointer;
+}
+.btn-download{
+	background-color: skyblue;
+	margin-top: 200px;
+	color: white;
+	height: 40px;
+	transition: all 2s;
+	width: 100px;
+	font-family: 'Hanalei', cursive;
+	border: 2px solid pink;
+}
+.btn-download:hover{
+	transform: rotate3d(0, 1, 0, 3.142rad);
+	background-color: yellow;
+	visibility: hidden;
+}
+.btn-download1{
+	background-color: skyblue;
+	margin-top: 200px;
+	color: white;
+	height: 140px;
+	transition: all 2s;
+	width: 100px;
+	font-family: 'Hanalei', cursive;
+	border: 2px solid pink;
+}
+.btn-download1:hover{
+	transform: rotate3d(0, 1, 0, 3.142rad);
+	background-color: yellow;
+
+
+}
+.btn-download2:hover{
+	transform: rotate3d(0, 1, 0, 3.142rad);
+	background-color: yellow;
+
+
+}
+.btn-download3:hover{
+	transform: rotate3d(0, 1, 0, 3.142rad);
+	background-color: yellow;
+
+
+}
+.btn-download2{
+	background-color: skyblue;
+	margin-top: 200px;
+	color: white;
+	height: 100px;
+	transition: all 2s;
+	width: 100px;
+	border-radius: 50%;
+	font-family: 'Hanalei', cursive;
+	border: 2px solid pink;
+}
+.btn-download3{
+	background-color: skyblue;
+	margin-top: 200px;
+	color: white;
+	transition: all 2s;
+	height: 140px;
+	width: 150px;
+	font-family: 'Hanalei', cursive;
+	border: 2px solid pink;
+}
+.btn-download5{
+	background-color: skyblue;
+	margin-top: 200px;
+	color: white;
+	height: 40px;
+	width: 100px;
+	font-family: 'Hanalei', cursive;
+	border: 2px solid pink;
+}
+.accordion1{
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+.accordion1:hover{
+	background-color: #456;
+}
+.accordion2:hover{
+	background-color: #456;
+}
+.accordion3:hover{
+	background-color: #456;
+}
+.accordion2 {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+.accordion3{
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.panel1 {
+  padding: 0 18px;
+  background-color: white;
+  overflow: hidden;
+}
+.panel2 {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+.panel3 {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+.active{
+	background-color: red;
+
+}
+.flex-container{
+	margin-top: 5%;
+	display: flex;
+	flex-wrap: wrap;
+	background-color: skyblue;
+
+}
+.flex-container > div{
+	margin: 10px;
+	background-color: white;
+	color: red;
+	position: relative;
+	box-shadow: 9px 9px 9px -1px rgba(30,232,54,1);
+	height: 200px;
+	width: 20%;
+	border:2px solid red;
+	animation-name: sai;
+	animation-duration: 4s;
+	animation-direction: alternate-reverse;
+	animation-iteration-count: infinite;
+	transition: all 2s;
+}
+.button-container{
+	animation-name: sai2;
+	animation-duration: 4s;
+	position:relative;
+	animation-iteration-count: 5545;
+}
+@keyframes s{
+	from{left:0%}
+	to{left: 50%}
+}
+.flex-container > div:hover{
+	background-color: green;
+	transform: rotate3d(0, 1, 0, 3.142rad);
+
+}
+.mar{
+	font-size: 35px;
+	color: red;
+	font-family: 'Saira Stencil One', cursive;
+	
+}
+@keyframes {
+	0%{background-color: green;transform: rotate(120deg);}
+	25%{background-color: pink;transform: rotate(180deg);}
+	50%{background-color: blue;transform: rotate(270deg);}
+	75%{background-color: #745422;transform: rotate(320deg);}
+	100%{background-color: #542278;transform: rotate(360deg);}
+}
+
+@media only screen and (max-width: 768px){
+	.flex-container > div{
+		width: 100%;
+	}
+}
+@media only screen and (max-width: 380px){
+	.flex-container > div{
+		width: 100%;
+	}
+}
+@media only screen and (max-width: 414px){
+	#box1{
+		width: 100%
+	}
+	#box2{
+		width: 100%
+	}
+	#box3{
+		width: 100%
+	}
+	#box4{
+		width: 100%
+	}
+}
+.sticky-bar{
+	position: fixed;
+	width: 20%;
+	display: none;
+	top: 57%;
+	margin-left: 75%;
+	transition: all 4s;
+	border:2px solid red;
+	padding-right: 30px;
+	z-index: 1;
+
+}
+
+.sticky-bar h1{
+	color: #784415;
+	font-size: 20px;
+	font-family: 'Bungee Outline', cursive;
+}
+.sticky-bar p{
+	color: red;
+	transition: all 2s;
+	position: absolute;
+	left: 90%;
+	cursor: pointer;
+	top: -10%;
+
+}
+.sticky-bar p:hover{
+	transform: rotate(360deg);
+}
+#text-box{
+	margin-left: 10%;
+	width: 80%;
+	height: 30px;
+}
+.ask{
+	background-color: red;
+	font-family: sans-serif;
+	position: absolute;
+	top: 63%;
+	left: 85%;
+	cursor: pointer;
+	height: 30px;
+}
+#text-box:focus{
+	outline: none;
+}
+.answer{
+	display: none;
+	transition: all 3s;
+	width: 30%;
+	height: 300px;
+	background-color: white;
+	z-index: 1;
+	margin-left: 30%;
+	position: fixed;
+	top: 20%;
+	border: 2px solid red;
+}
+.answer h2{
+	font-family: 'Merriweather Sans', sans-serif;
+	color: #125488;
+	text-transform: capitalize;
+	line-height: 30px;
+
+}
+#ok{
+	font-size: 40px;
+	color: skyblue;
+	padding-left: 20px;
+	width:80px;
+	margin-left: 50%;
+	background-color: green;
+	cursor: pointer;
+
+}
+#blow-up{
+	position: absolute;
+	left: 60%;
+	
+}
+.boxes{
+
+	margin-left: 24%;
+	display: flex;
+	flex-wrap: wrap;
+	border: 2px dotted red;
+	width: 50%;
+	border-width: 20%;
+	animation-name: shaik2;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+	-webkit-box-shadow: 9px 9px 9px -1px rgba(219,48,219,1);
+-moz-box-shadow: 9px 9px 9px -1px rgba(219,48,219,1);
+box-shadow: 9px 9px 9px -1px rgba(219,48,219,1);
+}
+.boxes>div{
+	margin: 10px;
+	height: 200px;
+	!border: 2px solid red;
+	width: 45%;
+	animation-name: shaik;
+	transition: all 3s;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+	background-color: lightgreen;
+	box-shadow: 9px 9px 9px 6px rgba(35,29,222,1);
+}
+.way-to-go-around-of-it{
+	position: fixed;
+	top: 300px;
+	left: 95%;
+
+}
+.img{
+	cursor: pointer;
+}
+.car{
+	width: 70px;
+	height: 70px;
+	position: fixed;
+	left: 88%;
+  cursor: pointer;
+	top: 300px;
+	animation-name: wheel;
+	animation-duration: 200ms;
+	animation-iteration-count: infinite;
+}
+
+@keyframes shaik{
+	25%{transform: rotate3d(0, 1, 0, 3.142rad);background-color: red}
+	50%{transform: rotate3d(1, 0, 1, 3.142rad);background-color: skyblue}
+	75%{transform: rotate3d(0.5, 0.5, 1, 3.142rad);background-color: yellow}
+	100%{transform: rotate3d(1, 0, 0.5, 3.142rad);background-color: pink}
+}
+
+@keyframes wheel{
+	50%{transform: rotate(180deg);}
+	100%{transform: rotate(360deg);}
+}
